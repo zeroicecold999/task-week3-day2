@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id"> 
+<head> 
+<meta charset="UTF-8" /> 
+<title>Kantin Pondok</title>
+<link rel="stylesheet" href="style.css" /> 
+</head> 
+<body> 
+<header id="header-kantin"> 
+<h1>Kantin Barokah</h1> 
+<p>Jajanan santri, harga bersahabat</p> 
+</header> 
+<section> 
+<h2>Menu Andalan</h2> 
+<p class="menu-item">Es Teh Manis - Rp 3.000</p> 
+<p class="menu-item menu-favorit">Mie Instan Telur - Rp 8.000</p> 
+<p class="menu-item">Gorengan - Rp 1.000 / pcs</p> 
+<a href="menu-lengkap.html"><button>masih ada lagi loh!</button></a>
+</section> 
+<footer id="footer-kantin"> 
+<p>Buka setiap hari, 06.00 - 20.00</p>
+<p style="color: green; font-weight: bold;">Diskon 10% untuk santri yang membawa botol minum sendiri</p> 
+</footer> 
+</body> 
+</html>
+
+<!-- jawaban untuk no 1. Fleksibilitas: Style Class lebih mudah ditimpa (override) dan dirawat. -->
+
+<!-- jawaban untuk no 2.
+ * WARNA YANG MUNCUL: KUNING (yellow)
+ * ALASAN:
+ * #header-kantin (ID Selector) punya prioritas/spesifisitas lebih tinggi 
+ * dibanding header (Element Selector), jadi warna kuning yang menang. -->
+
+ <!-- jawaban untuk no 3. 
+ * 2 CARA MENGECEK CSS GAGAL DIMUAT BROWSER:
+ * 
+ * 1. CEK TAB NETWORK (DEVELOPER TOOLS)
+ *    Buka F12 -> Tab Network -> Filter "CSS". Jika statusnya berwarna merah / 404, 
+ *    berarti file CSS gagal dimuat.
+ * 
+ * 2. TAMPILAN POLOS / BENTUK TEKS (VISUAL CHECK)
+ *    Tampilan web berubah menjadi teks polos tanpa warna, tata letak acak-acakan, 
+ *    atau gaya visual tidak berubah sama sekali.
+ -->
+
+ <!--  jawaban untuk no 4.
+ * KENAPA UNIVERSAL SELECTOR (*) HARUS DI PALING ATAS:
+ * 
+ * 1. Sebagai Pengatur Dasar (Reset/Normalize):
+ *    Menghapus margin/padding bawaan browser SEBELUM gaya elemen lain diterapkan.
+ * 
+ * 2. Mencegah Menimpa (Override) Style Lain:
+ *    CSS dibaca dari atas ke bawah. Jika ditaruh di bawah, aturan di atasnya 
+ *    bisa tidak sengaja tertimpa/rusak oleh aturan universal (*).
+ -->
